@@ -2,7 +2,9 @@ import React from 'react'
 
 function Confirmation() {
   return (
-    <div>Confirmation</div>
+    <>
+        <p>Confirm Your details and select the checkbox before confirming.</p>
+    </>
   )
 }
 

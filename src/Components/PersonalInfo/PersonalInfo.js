@@ -1,8 +1,10 @@
 import React from 'react'
 
+
 function PersonalInfo() {
-  return (
-    <div>PersonalInfo</div>
+  return (<>
+    <p>Please provide your name, email address and phone number.</p>
+    </>
   )
 }
 
