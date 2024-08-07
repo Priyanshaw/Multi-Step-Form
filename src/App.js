@@ -8,12 +8,10 @@ function App() {
     <>
     <Header/>
       <Container>
-        <Box sx={{ bgcolor: '#bfe2fd', height: '80vh', padding:'30px'}}>
+        <Box sx={{ bgcolor: '#bfe2fd', height: '60vh', padding:'5rem'}}>
         <Stepper/>
         </Box>
       </Container>
-      
-      
     </>
   );
 }

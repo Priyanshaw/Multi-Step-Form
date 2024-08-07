@@ -5,8 +5,11 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import PersonalInfo from '../PersonalInfo/PersonalInfo';
+import Address from '../Address/Address';
+import Confirmation from '../Confirmation/Confirmation';
 
-const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+const steps = ['Personal Information', 'Address Information', 'Confirmation'];
 
 export default function HorizontalLinearStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -62,7 +65,7 @@ export default function HorizontalLinearStepper() {
           const labelProps = {};
           if (isStepOptional(index)) {
             labelProps.optional = (
-              <Typography variant="caption">Optional</Typography>
+              <Typography variant="caption"></Typography>
             );
           }
           if (isStepSkipped(index)) {
@@ -88,6 +91,10 @@ export default function HorizontalLinearStepper() {
       ) : (
         <React.Fragment>
           <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+          {activeStep ===0 && <PersonalInfo/> }
+          {activeStep ===1 && <Address/> }
+          {activeStep ===2 && <Confirmation/> }
+          
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Button
               color="inherit"
