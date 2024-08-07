@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './Components/Header/Header';
 function App() {
   return (
     <>
-      <h1>Multi Step Form</h1>
+      <Header/>
     </>
   );
 }
