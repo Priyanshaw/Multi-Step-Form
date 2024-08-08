@@ -1,11 +1,10 @@
 #header{
     margin: 20px auto;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: all 0.5s ease-in-out;
     padding:5px;
 }
 #header:hover{
     text-decoration: underline;
-    text-decoration-color: #bfe2fd;
+    text-decoration-color: skyblue;
     
 }

@@ -112,7 +112,7 @@ export default function HorizontalLinearStepper() {
             )}
 
             <Button onClick={handleNext}>
-              {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+              {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
             </Button>
           </Box>
         </React.Fragment>
