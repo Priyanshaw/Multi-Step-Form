@@ -3,7 +3,7 @@ import Checkbox from '@mui/material/Checkbox';
 function Confirmation() {
   return (
     <>
-        <p>Confirm Your details and select the checkbox before confirming.</p>
+        <p class="muted">Confirm Your details and select the checkbox before confirming.</p>
                 
         <div class="container">
         <Checkbox defaultChecked id="confirmation" required/>
